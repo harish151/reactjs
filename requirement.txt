@@ -1,0 +1,10 @@
+->  create react js app by
+        (i)np vite@latest
+        (ii)give 'y'
+        (iii)enter project name
+        (iv)select 'react'
+        (v)choose 'javascript'
+        (vi)npm install
+        (vii)npm run dev
+
+->
