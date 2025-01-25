@@ -7,5 +7,5 @@
         (vi)npm install
         (vii)npm run dev
 
-->create 'components' folder in 'src' folder then add .jsx files
+->create 'components' folder in 'src' folder then create .jsx files
 ->
