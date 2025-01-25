@@ -7,7 +7,6 @@ import Great1 from './components/great1'
 import Hello from './components/hello'
 import Message from './components/Message'
 function App() {
-
   return (
    <div className="App">
         <Great />
