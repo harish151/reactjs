@@ -3,11 +3,22 @@
 //import viteLogo from '/vite.svg'
 import './App.css'
 import Great from './components/great'
+import Great1 from './components/great1'
+import Hello from './components/hello'
+import Message from './components/Message'
 function App() {
 
   return (
    <div className="App">
         <Great />
+        <Great1 name="abcd" city="xyz">
+
+        </Great1>
+        <Hello />
+        <Hello name="abcd" city="xyz">
+          <h1>This is Demo</h1>
+        </Hello>
+        <Message />
    </div>
   );
 }
