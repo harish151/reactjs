@@ -1,0 +1,15 @@
+import React, { Component } from 'react'
+
+    //rconst
+   function Functionclick(){
+    function clickHandler(){
+        console.log("clicked")
+    }
+    
+    return(
+      <div>
+        <button onClick={clickHandler}>click</button>
+      </div>
+    )
+}
+export default Functionclick

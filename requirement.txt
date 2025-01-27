@@ -8,4 +8,5 @@
         (vii)npm run dev
 
 ->create 'components' folder in 'src' folder then create .jsx files
+->install in vscode 'ES7 React/Redux/GraphQL/React-Native snippets' is used to generate code by keyword
 ->
