@@ -1,5 +1,5 @@
 import { Component } from "react";
-class Great1 extends Component {
+class Greet1 extends Component {
     render(){
        // return <h1>Welcome {this.props.name} {this.props.city}</h1>
        //destructuring
@@ -7,4 +7,4 @@ class Great1 extends Component {
        return <h1>Welcome {name} {city}</h1>
     }
 }
-export default Great1;
+export default Greet1;
