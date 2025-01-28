@@ -10,6 +10,8 @@ import Counter from './components/counter'
 import Functionclick from './components/functionclick'
 import Classclick from './components/classclick'
 import Eventbind from './components/eventbind'
+import Usergreeting from './components/conditionrender'
+import List from './components/list'
 function App() {
   return (
    <div className="App">
@@ -24,6 +26,8 @@ function App() {
         <Functionclick />
         <Classclick />
         <Eventbind />
+        <Usergreeting />
+        <List />
    </div>
   );
 }

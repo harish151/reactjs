@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-    //rconst
    function Functionclick(){
     function clickHandler(){
         console.log("clicked")
