@@ -5,13 +5,13 @@ class usergreeting extends Component {
       super(props)
     
       this.state = {
-         isLoggedIn:true                
+         isLoggedIn:false              
       }
     }
     
   render() {
                                            // short circuit operator
-    return this.state.isLoggedIn && <div>variable conditional rendering</div>
+    // return this.state.isLoggedIn && <div>variable conditional rendering</div>
 
 
                                            // terenary conditional operator
@@ -21,13 +21,13 @@ class usergreeting extends Component {
     // )
 
                                            // variable conditional rendering*
-    // let message
-    // if(this.state.isLoggedIn){
-    //     message=<div>variable conditional rendering</div>
-    // } else{
-    //   message=<div>welcome guest</div>
-    // }
-    // return (<div> {message} </div>)
+    let message
+     if(this.state.isLoggedIn){
+         message=<div><h1>variable conditional rendering</h1></div>
+     } else{
+       message=<div>welcome guest</div>
+     }
+     return (<div> {message} </div>)
   
                                            // if-else conditional rendering
     // if(this.state.isLoggedIn){ 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 function List() {
-   const names = ['john', 'james', 'jonny', 'jenny'];
+   const names = ['rC@18072021', 'james', 'jonny', 'jenny'];
    const namelist = names.map((i,index) => <h2 key={index}>{i}</h2>);
   
 //   const persons = [

@@ -1,7 +1,6 @@
 //import { useState } from 'react'
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
-import './App.css'
 import Greet from './components/greet'
 import Greet1 from './components/greet1'
 import Hello from './components/hello'
@@ -12,9 +11,16 @@ import Classclick from './components/classclick'
 import Eventbind from './components/eventbind'
 import Usergreeting from './components/conditionrender'
 import List from './components/list'
+import Stylesheet from './components/stylesheet'
+import Inline from './components/inline'
+import './App.css'
+import './index.css'
+import Form from './components/forms'
 function App() {
   return (
    <div className="App">
+   {/* <h1 className='error'>Error</h1>
+    <h1 className='success'>Success</h1>
         <Greet />
         <Greet1 name="abcd" city="xyz">
         </Greet1>
@@ -28,6 +34,9 @@ function App() {
         <Eventbind />
         <Usergreeting />
         <List />
+        <Stylesheet primary={true}/>
+        <Inline /> */}
+        <Form />
    </div>
   );
 }
