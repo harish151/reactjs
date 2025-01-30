@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import  { Component } from 'react'
 const form={
     border:'1px solid white',
     width:'100%'
@@ -28,7 +28,7 @@ class forms extends Component {
             topic:Event.target.value
         });
     }
-    handlersubmit=(Event)=>{
+    handlersubmit=()=>{
         alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)
     }
   render() {

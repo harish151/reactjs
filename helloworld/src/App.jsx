@@ -19,7 +19,7 @@ import Form from './components/forms'
 function App() {
   return (
    <div className="App">
-   {/* <h1 className='error'>Error</h1>
+    <h1 className='error'>Error</h1>
     <h1 className='success'>Success</h1>
         <Greet />
         <Greet1 name="abcd" city="xyz">
@@ -35,7 +35,7 @@ function App() {
         <Usergreeting />
         <List />
         <Stylesheet primary={true}/>
-        <Inline /> */}
+        <Inline /> 
         <Form />
    </div>
   );
