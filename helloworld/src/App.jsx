@@ -16,12 +16,13 @@ import Inline from './components/inline'
 import './App.css'
 import './index.css'
 import Form from './components/forms'
+import MountLifecycle from './components/mountinglifecycle'
 function App() {
   return (
    <div className="App">
     <h1 className='error'>Error</h1>
     <h1 className='success'>Success</h1>
-        <Greet />
+       {/* <Greet />
         <Greet1 name="abcd" city="xyz">
         </Greet1>
         <Hello name="abcd" city="xyz">
@@ -36,7 +37,8 @@ function App() {
         <List />
         <Stylesheet primary={true}/>
         <Inline /> 
-        <Form />
+        <Form />  */}
+        <MountLifecycle />
    </div>
   );
 }
