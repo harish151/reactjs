@@ -19,6 +19,9 @@ import Form from './components/forms'
 import MountLifecycle from './components/mountinglifecycle'
 import Updatinglifecycle from './components/updatinglifecycle'
 import Unmounting from './components/unmounting'
+import Fragments from './components/fragments'
+import Purecomponent from './components/purecomponent'
+import Parent from './components/parent'
 function App() {
   return (
     <div className="App">
@@ -42,8 +45,10 @@ function App() {
         <Inline /> 
         <Form />  
         <MountLifecycle /> 
-        <Updatinglifecycle /> */}
-        <Unmounting />
+        <Updatinglifecycle /> 
+        <Unmounting /> 
+        <Fragments /> */}
+        <Parent />
    </div>
   );
 }

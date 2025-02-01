@@ -13,12 +13,14 @@ class Message extends Component {
         })
     }
     render(){
+        console.log("message")
         return(
             <div>
-                <h1>
+                Regular Component{this.props.name}
+                {/*<h1>
                     {this.state.Message}
                 </h1>
-                <button onClick={()=>this.changeMessage()}>subscribe</button>
+                <button onClick={()=>this.changeMessage()}>subscribe</button> */}
             </div>
         );
     }
