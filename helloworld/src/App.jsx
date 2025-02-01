@@ -17,12 +17,15 @@ import './App.css'
 import './index.css'
 import Form from './components/forms'
 import MountLifecycle from './components/mountinglifecycle'
+import Updatinglifecycle from './components/updatinglifecycle'
+import Unmounting from './components/unmounting'
 function App() {
   return (
-   <div className="App">
+    <div className="App">
+      {/*
     <h1 className='error'>Error</h1>
     <h1 className='success'>Success</h1>
-       {/* <Greet />
+        <Greet />
         <Greet1 name="abcd" city="xyz">
         </Greet1>
         <Hello name="abcd" city="xyz">
@@ -37,8 +40,10 @@ function App() {
         <List />
         <Stylesheet primary={true}/>
         <Inline /> 
-        <Form />  */}
-        <MountLifecycle />
+        <Form />  
+        <MountLifecycle /> 
+        <Updatinglifecycle /> */}
+        <Unmounting />
    </div>
   );
 }
