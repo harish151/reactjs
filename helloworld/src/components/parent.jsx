@@ -1,6 +1,7 @@
 import React, { Component, PureComponent } from 'react'
 import Regcomp from './message'
 import PureComp from './purecomponent'
+import Menucomponent from './menucomponent'
 export class parent extends Component {
   constructor(props) {
     super(props)
@@ -21,8 +22,9 @@ export class parent extends Component {
     return (
       <div>
         parent component
-        <Regcomp name={this.state.name} />
-        <PureComp name={this.state.name} />
+        {/*<Regcomp name={this.state.name} />
+        <PureComp name={this.state.name} /> */}
+        <Menucomponent name={this.state.name} />
       </div>
     )
   }
