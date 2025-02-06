@@ -22,6 +22,9 @@ import Unmounting from './components/unmounting'
 import Fragments from './components/fragments'
 import Purecomponent from './components/purecomponent'
 import Parent from './components/parent'
+import Refs from './components/refs'
+import Focusinput from './components/focusinput'
+import Frparentinput from './components/frparentinput'
 function App() {
   return (
     <div className="App">
@@ -47,8 +50,11 @@ function App() {
         <MountLifecycle /> 
         <Updatinglifecycle /> 
         <Unmounting /> 
-        <Fragments /> */}
-        <Parent />
+        <Fragments /> 
+        <Parent /> 
+        <Refs /> 
+        <Focusinput /> */}
+        <Frparentinput />
    </div>
   );
 }
