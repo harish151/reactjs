@@ -25,6 +25,9 @@ import Parent from './components/parent'
 import Refs from './components/refs'
 import Focusinput from './components/focusinput'
 import Frparentinput from './components/frparentinput'
+import Portaldemo from './components/portaldemo'
+import Clickcounter from './components/clickcounter'
+import Hoveroncount from './components/hoveroncount'
 function App() {
   return (
     <div className="App">
@@ -53,8 +56,11 @@ function App() {
         <Fragments /> 
         <Parent /> 
         <Refs /> 
-        <Focusinput /> */}
-        <Frparentinput />
+        <Focusinput /> 
+        <Frparentinput /> 
+        <Portaldemo /> 
+        <Clickcounter /> */}
+        <Hoveroncount />
    </div>
   );
 }
