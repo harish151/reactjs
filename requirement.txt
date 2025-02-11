@@ -1,5 +1,5 @@
 ->  create react js app by
-        (i)np vite@latest
+        (i)npm create vite@latest project_name
         (ii)give 'y'
         (iii)enter project name
         (iv)select 'react'
