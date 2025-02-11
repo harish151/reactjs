@@ -1,6 +1,7 @@
 //import { useState } from 'react'
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
+
 import Greet from './components/greet'
 import Greet1 from './components/greet1'
 import Hello from './components/hello'
@@ -28,11 +29,18 @@ import Frparentinput from './components/frparentinput'
 import Portaldemo from './components/portaldemo'
 import Clickcounter from './components/clickcounter'
 import Hoveroncount from './components/hoveroncount'
+import Clickcounter2 from './components/clickcounter2'
+import Hovercounter2 from './components/hovercounter2'
+import Renderprops from './components/renderprops'
+import Counter1 from './components/counter1'
+import { Userprovider } from './components/context'; 
+import ComponentC from './components/componentC';
 function App() {
   return (
-    <div className="App">
-      {/*
-    <h1 className='error'>Error</h1>
+
+ <div className="App">
+      
+   {/* <h1 className='error'>Error</h1>
     <h1 className='success'>Success</h1>
         <Greet />
         <Greet1 name="abcd" city="xyz">
@@ -59,9 +67,17 @@ function App() {
         <Focusinput /> 
         <Frparentinput /> 
         <Portaldemo /> 
-        <Clickcounter /> */}
-        <Hoveroncount />
-   </div>
+        <Clickcounter /> 
+        <Hoveroncount /> 
+        <Clickcounter2 /> 
+        <Hovercounter2 />
+        <Renderprops render={(isloggedin)=>isloggedin?"pylife":"guest"}/> 
+        <Counter1 render={(count,increment)=>(<Clickcounter2 count={count} increment={increment}/>)}/>
+        <Counter1 render={(count,increment)=>(<Hovercounter2 count={count} increment={increment}/>)}/> */}
+        <Userprovider value="John Doe"> 
+            <ComponentC />
+        </Userprovider>
+   </div> 
   );
 }
 
