@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 
 class mountinglifecycle extends Component {
-    //roconst
+    //rconst
     constructor(props) {       //method1-constructor()
     super(props)
     this.state = {
