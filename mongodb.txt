@@ -1,0 +1,61 @@
+-> install mogodb
+->set enviroment path in path
+->check mongodb version in system cmd "mogod --version"
+-> commands
+    "showdbs" - used to see databases
+    "use database_name" - used to create database or switch database |insert collection after create database otherwise database is not appear in dashboard.
+    "db" - used to view current db
+    "db.deleteDatabase()" - used to delete database.
+    "db.createCollection('Collection_name')" - used to create empty collection in database
+    "show collections (or) db.getCollectionNames()" - used to display all collections in database
+    "db.collection_name.drop()" - used to delete a collection in database
+
+    --insert document commands --
+    "db.collection_name.insert([{},{}])" - used to create documents in collections in dictionary formate either one or many at a time
+    "db.collection_name.insertOne({})" - used to create only one document at a time
+            eg:-db.myCollection.insertOne({ name: "Alice", age: 30 })
+    "db.collection_name.insertMany([{},{}])" - used to create many documents at a time
+            eg:-db.myCollection.insertMany([{ name: "Alice", age: 30 },{ name: "Bob", age: 25 },{ name: "Charlie", age: 35 }])
+
+    --delete document document --
+    "db.collection_name.deleteOne({})" - used to delete one documents in the collection.
+            eg:-if we delete document by using name.the same names are present in the document then it deletes only first obtained document. 
+    "db.collection_name.deleteMany({})" - used to delete many documents in the collection.
+            eg1:-db.myCollection.deleteMany({ name:"1234"})  
+            eg2:-db.myCollection.deleteMany({ age: { $lt: 30 } }) //we have conditions - lt,gt,eq
+            eg3:-db.myCollection.deleteMany({ name:"1234",age: { $lt: 30 } })
+    "db.collection_name.remove({})" - it similar to deleteOne.
+
+    --update document --
+    "db.collection_name.updateOne({filter},{$set:{field1: value1, field2: value2, ... }})" - used to update one document in collection
+            eg:-db.myCollection.updateOne({ name: "Alice" },{ $set: { age: 31 } })
+    "db.collection_name.updateMany({filter},{ field1: value1, field2: value2, ... })" - used to update many documents in collection
+            eg:-db.myCollection.updateMany({ age: { $lt: 30 } }, { $set: { status: "young" } })
+    "db.collection_name.replaceOne({ filter }, { new_document })" - replace the entire one document in collection
+            eg:-db.myCollection.replaceOne({ name: "Alice" }, { name: "Alice", age: 32, status: "active" } )
+
+    --fetch document data --
+    "db.collection_name.find()" - used to fetch all documents in collection
+            eg1:-db.myCollection.find() //it returns all document in the collection
+            eg2:-db.myCollection.find({name:"1234"}) //it fectch only document contains name 1234
+            eg3:-db.myCollection.find({ age: { $gt: 30 } }, { name: 1, age: 1 })  // 1 means include the field and 0 means exclude the field
+                 // from the above,it returns only name and age in documents greaterthan age 30.
+    "db.collection_name.findOne({ filter })" - it returns only first document of fetch filter.
+            eg:-db.myCollection.findOne({ name: "Alice" }) 
+    "db.collection_name.find().limit()" - it returns only n documents entered in limit.
+            eg:-db.myCollection.find().limit(2) //it returns only first two documents
+    "db.myCollection.find().count()" - it returns count of documents in collection
+
+
+    --increment operator--
+    "db.collection_name.updateOne({ filter }, { $inc: { field: value } })" - used to increment value of field
+            eg1:- db.users.updateOne({ name: "Alice" },{ $inc: { age: 1 } }) //it increment +1 in age
+            eg2:- db.users.updateOne({ name: "Alice" },{ $inc: { age: -4 } }) //it decrement -4 in age
+
+    --rename operator --
+    "db.collection_name.updateOne({ filter },{ $rename:{oldField:"newField"} })" - used to change field name
+            eg:- db.users.updateOne({ name: "Alice" },{ $rename: { address: "location" } })  // Rename "address" to "location"
+
+    --prettyfied--
+    "db.collection_name.find().pretty()" - show all documents in a collection(prettified).it means shows data clearly
+    
